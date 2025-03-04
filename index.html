@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>European Tech Recruit</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f8f8f8;
+        text-align: center;
+      }
+      .container {
+        width: 80%;
+        margin: 50px auto;
+        padding: 20px;
+        border-radius: 8px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+      }
+      .about,
+      .contact {
+        width: 45%;
+      }
+      h1 {
+        font-size: 24px;
+        margin-bottom: 10px;
+        width: 100%;
+      }
+      h2 {
+        font-size: 20px;
+        margin-bottom: 10px;
+      }
+      p {
+        font-size: 16px;
+        color: #333;
+        line-height: 1.6;
+      }
+      .contact form {
+        display: flex;
+        flex-direction: column;
+      }
+      .contact input,
+      .contact textarea,
+      .contact button {
+        margin: 10px 0;
+        padding: 10px;
+        font-size: 14px;
+        width: 100%;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+      .contact button {
+        background-color: #007bff;
+        color: white;
+        border: none;
+        cursor: pointer;
+      }
+      .contact button:hover {
+        background-color: #0056b3;
+      }
+
+      @media screen and (max-width: 992px) {
+        body{
+            align-items: center;
+        }
+        .container {
+          flex-direction: column;
+          align-items: center;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>European Tech Recruit</h1>
+    <div class="container">
+      <div class="about">
+        <h2>About us</h2>
+        <p>
+          European Tech Recruit has firmly established its reputation in the
+          tech recruitment sector since its inception in 2009. From
+          semiconductors to AI, our track record showcases over a decade of
+          pairing top tech talent with game-changing roles worldwide.
+        </p>
+        <p>
+          As the technology sector evolves, so do we. We adapt, grow, and
+          continuously stay ahead of the curve, helping clients globally realise
+          their ambitions.
+        </p>
+      </div>
+      <div class="contact">
+        <h2>Let's talk</h2>
+        <form>
+          <input type="text" placeholder="Name" required />
+          <input type="email" placeholder="Email" required />
+          <input type="tel" placeholder="Phone" required />
+          <input type="text" placeholder="Location" />
+          <textarea placeholder="Message" rows="4"></textarea>
+          <button type="submit">We'll Reach Out Shortly</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
